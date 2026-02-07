@@ -4,6 +4,10 @@ title: About
 permalink: /about/
 ---
 
+{% if site.avatar %}
+<img class="about-avatar" src="{{ site.avatar | relative_url }}" alt="{{ site.author.name | default: site.title | escape }}" style="width:200px;height:200px;border-radius:50%;display:block;margin:0 auto 1.5rem auto;object-fit:cover;" />
+{% endif %}
+
 I'm building this site as a place to write about Platform Engineering and related topics as I learn, work on projects, and teach what I pick up along the way.
 
 You'll find informal blog posts here: notes from projects, things I'm figuring out, and the occasional how-to or writeup that might be useful to someone else.

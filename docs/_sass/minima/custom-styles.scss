@@ -1,0 +1,19 @@
+// Avatar / profile picture in header
+.site-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 10px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+
+// Full-size avatar on About page
+.about-avatar {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto 1.5rem auto;
+  object-fit: cover;
+}

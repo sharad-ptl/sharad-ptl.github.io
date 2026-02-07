@@ -27,6 +27,9 @@ github_username:  sharad-ptl
 author:
   name: Sharad Patel
 
+# Avatar / profile picture shown in the header (place your image in assets/)
+avatar: "assets/avatar.png"
+
 # Build settings
 # Use remote_theme to get Minima v3 (GitHub Pages bundles v2.5.1 which lacks dark skin
 # and has a footer bug that outputs raw author hash instead of the name)
