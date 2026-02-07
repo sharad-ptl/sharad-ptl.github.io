@@ -28,7 +28,9 @@ author:
   name: Sharad Patel
 
 # Build settings
-theme: minima
+# Use remote_theme to get Minima v3 (GitHub Pages bundles v2.5.1 which lacks dark skin
+# and has a footer bug that outputs raw author hash instead of the name)
+remote_theme: jekyll/minima
 minima:
   skin: dark
   show_excerpts: true
@@ -39,6 +41,7 @@ minima:
     - { title: LinkedIn, icon: linkedin,   url: "https://linkedin.com/in/sharadpatelx" }
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
 
 # Exclude from processing.
 # The following items will not be processed, by default.
