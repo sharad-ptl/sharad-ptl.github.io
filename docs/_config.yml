@@ -27,6 +27,8 @@ github_username:  sharad-ptl
 
 # Build settings
 theme: minima
+minima:
+  skin: dark
 plugins:
   - jekyll-feed
 
