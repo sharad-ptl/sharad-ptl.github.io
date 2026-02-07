@@ -4,12 +4,26 @@ Personal site for blog posts about Platform Engineering and related topics. Buil
 
 **Live site:** [sharad-ptl.github.io](https://sharad-ptl.github.io)
 
-## Local development
+## Prerequisites
 
-```bash
-cd docs
-bundle install
-bundle exec jekyll serve
-```
+- **Ruby** 2.7 or newer (Jekyll 4 requires Ruby 2.6+)
+- **Bundler** — install with `gem install bundler` if not already present
 
-Then open [http://localhost:4000](http://localhost:4000).
+## Setup
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/sharad-ptl/sharad-ptl.github.io.git
+   cd sharad-ptl.github.io
+   ```
+
+2. Install dependencies and run the site locally:
+
+   ```bash
+   cd docs
+   bundle install
+   bundle exec jekyll serve
+   ```
+
+3. Open [http://localhost:4000](http://localhost:4000) in your browser.
