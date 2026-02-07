@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Getting Started with GitHub Pages & Jekyll"
+title:  "🚀 Getting Started with GitHub Pages & Jekyll"
 date:   2026-02-07 12:17:10 +0000
 categories: platform-engineering
 ---
