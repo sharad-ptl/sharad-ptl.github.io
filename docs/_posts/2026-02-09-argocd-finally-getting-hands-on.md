@@ -1,18 +1,20 @@
 ---
 layout: post
-title:  "🐙 ArgoCD: Finally Getting My Hands Dirty"
-date:   2026-02-09 10:30:00 +0000
+title: "🐙 ArgoCD: Finally Getting My Hands Dirty"
+date: 2026-02-09 10:30:00 +0000
 categories: platform-engineering
 ---
-I'm pumped. After months of reading about it, watching talks, and seeing it pop up in every "modern platform engineering" conversation, I'm finally going to use ArgoCD at work. Not just play around with it locally—actually put it into production. So before I dive in, here's why I think this tool is such a big deal.
+I'm pumped. After months of reading about it, watching talks, and seeing it pop up in every "modern platform engineering" conversation, I'm finally going to use ArgoCD. Not just play around with it locally—actually put it into production. So before I dive in, here's why I think this tool is such a big deal.
 
-**What is ArgoCD?**
+### What is ArgoCD?
 
 At its core, ArgoCD is a declarative, GitOps continuous delivery tool for Kubernetes. That's a mouthful, but the idea is straightforward: you declare the desired state of your Kubernetes resources in Git, and ArgoCD makes sure your cluster matches that state. If something drifts, ArgoCD detects it and can automatically sync things back. Git becomes your single source of truth.
 
+![Git as source of truth — ArgoCD keeps the cluster in sync]({{ "/assets/argocd-git-cluster-sync.png" | relative_url }})
+
 It's built on the [GitOps principles](https://www.gitops.tech/) pioneered by Weaveworks, and it's become the de facto standard for GitOps in the Kubernetes world. It's a CNCF graduated project, which tells you something about its maturity and adoption.
 
-**Why ArgoCD is Powerful for Platform Engineering**
+### Why ArgoCD is Powerful for Platform Engineering
 
 The beauty of ArgoCD really shines when you're building an Internal Developer Platform (IDP). Here's why:
 
@@ -40,7 +42,7 @@ ArgoCD integrates beautifully with tools like Argo Rollouts for blue-green deplo
 
 The ArgoCD UI gives you a real-time view of your applications: what's deployed, what's synced, what's out of sync, and the health of each resource. It's visual, intuitive, and makes troubleshooting so much easier. No more SSHing into clusters and running 20 `kubectl` commands to understand the state of things.
 
-**ArgoCD and Internal Developer Platforms**
+### ArgoCD and Internal Developer Platforms
 
 If you're building an IDP, ArgoCD is often the centerpiece of the deployment layer. Here's how it fits in:
 
@@ -48,13 +50,15 @@ If you're building an IDP, ArgoCD is often the centerpiece of the deployment lay
 
 - **Environment Promotion**: Want to promote an app from staging to production? Update the manifest in the production branch or folder, and ArgoCD handles the rest. Simple, predictable, and traceable.
 
-**What's Next for Me**
+### What's Next for Me
 
 At work, we're setting up ArgoCD to manage deployments across our Kubernetes clusters. The plan is to start with a few pilot applications, build confidence, and then gradually onboard more teams.
 
 I'll be documenting the journey here—what works, what doesn't, lessons learned, and maybe some patterns worth stealing. If you're thinking about adopting ArgoCD or GitOps in general, I hope my notes help.
 
 Let's get declarative.
+
+---
 
 **Resources to Dive Deeper:**
 
